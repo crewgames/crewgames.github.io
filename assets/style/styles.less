@@ -6,11 +6,10 @@
 
 .navbar-brand {
     cursor: pointer;
-    color : #f4f4f4;
+    color : #f4f4f4 !important;
 
     .nav-link {
         margin-right: 1em !important;
-        color: #ffffff;
 
         &:hover {
             background: #f4f4f4;
@@ -41,7 +40,8 @@
     min-width       : 100%;
     left            : 0;
     top             : 0;
-    background-color: #f4f4f4c9;
+    background-color: #f4f4f486;
+    filter          : blur(0.5px);
 }
 
 *,
@@ -55,21 +55,21 @@
     top     : 30%;
     margin  : auto;
     padding : 2em;
-}
 
-.description h1 {
-    color: @main;
-}
+    h1 {
+        color: @main;
+    }
 
-.description p {
-    color      : #666666;
-    font-size  : 20px;
-    width      : 50%;
-    line-height: 1.5;
-}
+    p {
+        color      : #666666;
+        font-size  : 20px;
+        width      : 50%;
+        line-height: 1.5;
+    }
 
-.description button {
-    border          : 1px solid @main;
-    background-color: @main;
-    color           : #ffffff;
+    button {
+        border          : 1px solid @main;
+        background-color: @main;
+        color           : #ffffff;
+    }
 }
