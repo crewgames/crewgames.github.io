@@ -1,0 +1,34 @@
+{
+    "name": "crewgames.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "dependencies": {
+        "awesome-typescript-loader": "^5.2.1",
+        "eslint": "^7.10.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "typescript": "^4.0.3"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.49",
+        "@types/react-dom": "^16.9.8",
+        "clean-webpack-plugin": "^3.0.0",
+        "html-webpack-plugin": "^4.5.0",
+        "webpack": "^4.44.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/crewgames/crewgames.github.io.git"
+    },
+    "author": "Crew Project authors",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/crewgames/crewgames.github.io/issues"
+    },
+    "homepage": "https://github.com/crewgames/crewgames.github.io#readme"
+}

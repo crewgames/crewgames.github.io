@@ -1,5 +1,416 @@
 @main: #00f9f9;
 
+@-moz-keyframes spin {
+    0% {
+        -moz-transform   : rotate(0deg);
+        -o-transform     : rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+
+    100% {
+        -moz-transform   : rotate(359deg);
+        -o-transform     : rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform        : rotate(359deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -moz-transform   : rotate(0deg);
+        -o-transform     : rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+
+    100% {
+        -moz-transform   : rotate(359deg);
+        -o-transform     : rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform        : rotate(359deg);
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -moz-transform   : rotate(0deg);
+        -o-transform     : rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+
+    100% {
+        -moz-transform   : rotate(359deg);
+        -o-transform     : rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform        : rotate(359deg);
+    }
+}
+
+@-ms-keyframes spin {
+    0% {
+        -moz-transform   : rotate(0deg);
+        -o-transform     : rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+
+    100% {
+        -moz-transform   : rotate(359deg);
+        -o-transform     : rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform        : rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -moz-transform   : rotate(0deg);
+        -o-transform     : rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+
+    100% {
+        -moz-transform   : rotate(359deg);
+        -o-transform     : rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform        : rotate(359deg);
+    }
+}
+
+@font-face {
+    font-family: 'fontello';
+    src        : url('../fonts/iconfont/iconfont.eot?94320166');
+    src        : url('../fonts/iconfont/iconfont.eot?94320166#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont/iconfont.woff2?94320166') format('woff2'),
+        url('../fonts/iconfont/iconfont.woff?94320166') format('woff'),
+        url('../fonts/iconfont/iconfont.ttf?94320166') format('truetype'),
+        url('../fonts/iconfont/iconfont.svg?94320166#fontello') format('svg');
+    font-weight: normal;
+    font-style : normal;
+    font-display: swap;
+}
+
+/* Start of iconfont codes section */
+.icon-heart:before {
+    content: '\e800';
+}
+
+.icon-star:before {
+    content: '\e801';
+}
+
+.icon-search:before {
+    content: '\e802';
+}
+
+.icon-music:before {
+    content: '\e803';
+}
+
+.icon-videocam:before {
+    content: '\e804';
+}
+
+.icon-picture:before {
+    content: '\e805';
+}
+
+.icon-camera:before {
+    content: '\e806';
+}
+
+.icon-th-large:before {
+    content: '\e807';
+}
+
+.icon-th:before {
+    content: '\e808';
+}
+
+.icon-th-list:before {
+    content: '\e809';
+}
+
+.icon-ok:before {
+    content: '\e80a';
+}
+
+.icon-ok-circled:before {
+    content: '\e80b';
+}
+
+.icon-plus:before {
+    content: '\e80c';
+}
+
+.icon-minus:before {
+    content: '\e80d';
+}
+
+.icon-folder:before {
+    content: '\e80e';
+}
+
+.icon-folder-open:before {
+    content: '\e80f';
+}
+
+.icon-play:before {
+    content: '\e810';
+}
+
+.icon-play-circled2:before {
+    content: '\e811';
+}
+
+.icon-stop:before {
+    content: '\e812';
+}
+
+.icon-pause:before {
+    content: '\e813';
+}
+
+.icon-to-end:before {
+    content: '\e814';
+}
+
+.icon-to-end-alt:before {
+    content: '\e815';
+}
+
+.icon-to-start:before {
+    content: '\e816';
+}
+
+.icon-to-start-alt:before {
+    content: '\e817';
+}
+
+.icon-fast-fw:before {
+    content: '\e818';
+}
+
+.icon-fast-bw:before {
+    content: '\e819';
+}
+
+.icon-flash:before {
+    content: '\e81a';
+}
+
+.icon-cloud:before {
+    content: '\e81b';
+}
+
+.icon-font:before {
+    content: '\e81c';
+}
+
+.icon-bold:before {
+    content: '\e81d';
+}
+
+.icon-italic:before {
+    content: '\e81e';
+}
+
+.icon-align-center:before {
+    content: '\e81f';
+}
+
+.icon-align-right:before {
+    content: '\e820';
+}
+
+.icon-align-justify:before {
+    content: '\e821';
+}
+
+.icon-list:before {
+    content: '\e822';
+}
+
+.icon-indent-left:before {
+    content: '\e823';
+}
+
+.icon-down-small:before {
+    content: '\e824';
+}
+
+.icon-left-small:before {
+    content: '\e825';
+}
+
+.icon-right-small:before {
+    content: '\e826';
+}
+
+.icon-up-small:before {
+    content: '\e827';
+}
+
+.icon-skype:before {
+    content: '\e828';
+}
+
+.icon-twitter:before {
+    content: '\e829';
+}
+
+.icon-hash:before {
+    content: '\e82a';
+}
+
+.icon-at:before {
+    content: '\e82b';
+}
+
+.icon-spin1:before {
+    content: '\e830';
+}
+
+.icon-spin6:before {
+    content: '\e839';
+}
+
+.icon-firefox:before {
+    content: '\e840';
+}
+
+.icon-chrome:before {
+    content: '\e841';
+}
+
+.icon-opera:before {
+    content: '\e842';
+}
+
+.icon-ie:before {
+    content: '\e843';
+}
+
+.icon-rss:before {
+    content: '\f09e';
+}
+
+.icon-mail-alt:before {
+    content: '\f0e0';
+}
+
+.icon-desktop:before {
+    content: '\f108';
+}
+
+.icon-laptop:before {
+    content: '\f109';
+}
+
+.icon-tablet:before {
+    content: '\f10a';
+}
+
+.icon-mobile:before {
+    content: '\f10b';
+}
+
+.icon-quote-left:before {
+    content: '\f10d';
+}
+
+.icon-quote-right:before {
+    content: '\f10e';
+}
+
+.icon-code:before {
+    content: '\f121';
+}
+
+.icon-play-circled:before {
+    content: '\f144';
+}
+
+.icon-ok-squared:before {
+    content: '\f14a';
+}
+
+.icon-apple:before {
+    content: '\f179';
+}
+
+.icon-windows:before {
+    content: '\f17a';
+}
+
+.icon-moon:before {
+    content: '\f186';
+}
+
+.icon-reddit:before {
+    content: '\f1a1';
+}
+
+.icon-toggle-off:before {
+    content: '\f204';
+}
+
+.icon-toggle-on:before {
+    content: '\f205';
+}
+
+.icon-wikipedia-w:before {
+    content: '\f266';
+}
+
+.icon-safari:before {
+    content: '\f267';
+}
+
+.icon-chrome-1:before {
+    content: '\f268';
+}
+
+.icon-firefox-1:before {
+    content: '\f269';
+}
+
+.icon-opera-1:before {
+    content: '\f26a';
+}
+
+.icon-internet-explorer:before {
+    content: '\f26b';
+}
+
+.icon-edge:before {
+    content: '\f282';
+}
+
+/* End of iconfont codes sections */
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family    : "fontello";
+    font-style     : normal;
+    font-weight    : normal;
+    display        : inline-block;
+    text-decoration: inherit;
+    width          : 1em;
+    margin-right   : .2em;
+    text-align     : center;
+    font-variant   : normal;
+    text-transform : none;
+    line-height    : 1em;
+    margin-left    : .2em;
+    font-size      : 120%;
+    /* Uncomment for 3D effect */
+    /* text-shadow : 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
 .navbar {
     background-color: #2de9e9;
 }
@@ -47,7 +458,9 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing             : border-box;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .description {
