@@ -1,17 +1,20 @@
+@main: #00f9f9;
+
 .navbar {
     background-color: #2de9e9;
 }
 
 .navbar-brand {
     cursor: pointer;
-    color: #f4f4f4;
+    color : #f4f4f4;
 
     .nav-link {
         margin-right: 1em !important;
+        color: #ffffff;
 
         &:hover {
             background: #f4f4f4;
-            color: #00f9f9;
+            color     : @main;
         }
     }
 }
@@ -25,16 +28,48 @@
 }
 
 .header {
-    height: 100vh;
-    background-image: url('/assets/img/headerback.jpg');
+    height               : 100vh;
+    background-image     : url('/assets/img/headerback.jpg');
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background-size      : cover;
+    background-position  : center;
 }
+
 .overlay {
+    position        : absolute;
+    min-height      : 100%;
+    min-width       : 100%;
+    left            : 0;
+    top             : 0;
+    background-color: #f4f4f4c9;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.description {
     position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0%;
-    top: 0%;
+    top     : 30%;
+    margin  : auto;
+    padding : 2em;
+}
+
+.description h1 {
+    color: @main;
+}
+
+.description p {
+    color      : #666666;
+    font-size  : 20px;
+    width      : 50%;
+    line-height: 1.5;
+}
+
+.description button {
+    border          : 1px solid @main;
+    background-color: @main;
+    color           : #ffffff;
 }
