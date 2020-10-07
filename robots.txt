@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /webpack.config.js
+Disallow: /README.md
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /.gitattributes
+Disallow: /.gitignore
+Disallow: /.eslintrc
+Disallow: /.eslintignore
+Disallow: /node_modules/
+Sitemap: /sitemap.xml
