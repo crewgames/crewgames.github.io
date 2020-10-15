@@ -22,20 +22,40 @@
     }
 }
 
-::-webkit-scrollbar {
-    width: 12px;
+@media (prefers-colors-scheme: light) {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        color        : #d1d1d1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        color        : #ffffff;
+    }
 }
 
-::-webkit-scrollbar-track {
-    border-radius     : 10px;
-    box-shadow        : inset 0 0 6px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+@media (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        color        : #000000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        color        : #343a40;
+    }
 }
 
-::-webkit-scrollbar-thumb {
-    border-radius     : 10px;
-    box-shadow        : inset 0 0 6px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+::-webkit-scrollbar:window-inactive {
+    filter: grayscale(100%);
 }
 
 .navbar-brand {
