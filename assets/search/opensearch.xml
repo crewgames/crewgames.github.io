@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-<ShortName>Crew</ShortName>
-<Image height="16" width="16" type="image/svg+xml">/assets/img/favicon.svg</Image>
-<InputEncoding>utf-8</InputEncoding>
-<Url type="text/html" method="get" template="/?q={searchTerms}"/>
+	<ShortName>
+		Crew
+	</ShortName>
+	<Image height="16" width="16" type="image/svg+xml">
+		/assets/img/favicon.svg
+	</Image>
+	<InputEncoding>
+		utf-8
+	</InputEncoding>
+	<Url type="text/html" method="get" template="/?q={searchTerms}" />
 </OpenSearchDescription>
