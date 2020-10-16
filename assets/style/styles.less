@@ -54,6 +54,50 @@
     }
 }
 
+@media print {
+
+    html,
+    body {
+        width : 210mm;
+        height: 297mm;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-shadow : none !important;
+        text-shadow: none !important;
+    }
+
+    .header,
+    .footer,
+    noscript {
+        display   : none;
+        visibility: collapse;
+    }
+
+    ul,
+    ol,
+    table {
+        page-break-inside: avoid;
+    }
+
+    a[href^="http"]::after {
+        content: " ("attr(href) ") ";
+    }
+
+    a[href^="mailto:"]::after {
+        content: " ("attr(href) ") ";
+    }
+}
+
+@page {
+    margin-top   : 10mm;
+    margin-bottom: 10mm;
+    margin-right : 10mm;
+    margin-left  : 20mm;
+}
+
 ::-webkit-scrollbar:window-inactive {
     filter: grayscale(100%);
 }
