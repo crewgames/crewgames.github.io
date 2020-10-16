@@ -1,2 +1,3 @@
 # ESLint ignore list
-node_modules
+/node_modules/
+/assets/ie/

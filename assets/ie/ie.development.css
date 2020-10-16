@@ -2,23 +2,139 @@
 
 @-ms-viewport {
     -ms-orientation: landscape;
-    orientation: landscape;
-    -ms-zoom: 1;
-    zoom: 1;
-    width: expression(
-        /* document.clientWidth */
-    );
+    orientation    : landscape;
+    -ms-zoom       : 1;
+    zoom           : 1;
+    width          : expression(
+            /* document.clientWidth */
+        );
     height: expression(
-        /* document.clientHeight */
-    );
+            /* document.clientHeight */
+        );
     user-zoom: fixed;
 }
 
 img {
-    -ms-interpolation-mode: bicubic;
+    -ms-interpolation-mode: bicubic !important;
+    -ms-behavior          : url('iepngfix.htc') !important;
+    behavior              : url('iepngfix.htc') !important;
 }
+
 * {
-    -ms-zoom-animation: default;
-    -ms-zoom: 1;
-    zoom: 1;
+    -ms-zoom-animation            : default !important;
+    -ms-zoom                      : 1 !important;
+    zoom                          : 1 !important;
+    scrollbar-base-color          : #ffffff;
+    scrollbar-track-color         : #ffffff;
+    scrollbar-face-color          : #ffffff;
+    scrollbar-arrow-color         : #000000;
+    scrollbar-highlight-color     : #00000080;
+    scrollbar-shadow-color        : #00000080;
+    scrollbar-darkshadow-color    : #000000;
+    scrollbar-3dlight-color       : #00000080;
+    -ms-scrollbar-base-color      : #ffffff;
+    -ms-scrollbar-track-color     : #ffffff;
+    -ms-scrollbar-face-color      : #ffffff;
+    -ms-scrollbar-arrow-color     : #000000;
+    -ms-scrollbar-highlight-color : #00000080;
+    -ms-scrollbar-shadow-color    : #00000080;
+    -ms-scrollbar-darkshadow-color: #000000;
+    -ms-behavior                  : url('PIE.htc');
+    behavior                      : url('PIE.htc');
+}
+
+::-ms-browse {
+    border-radius : 0 10px 10px 0;
+    border-width  : 1px;
+    border-style  : solid;
+    border-color  : #7c7c7cee;
+    background    : #ffffff;
+    color         : #000000;
+    margin-left   : 2px;
+    padding-left  : 10px;
+    padding-right : 10px;
+    padding-top   : 4px;
+    padding-bottom: 4px;
+}
+
+::-ms-clear {
+    border-color    : #00000080;
+    background-color: #ffffff80;
+    color           : #00000080;
+}
+
+::-ms-clear:hover {
+    border-color    : #000000;
+    background-color: #ffffff;
+    color           : #000000;
+}
+
+::-ms-expand {
+    color           : #ffffff;
+    background-color: #ffffff;
+    border-color    : #000000;
+}
+
+input::-ms-value {
+    background-color: #ffffff;
+}
+
+select::-ms-value {
+    background: #ffffff;
+    color     : #000000;
+}
+
+input[type="file"]::-ms-value {
+    background-color: #ffffff;
+    color           : #000000;
+}
+
+input[type="radio"]::-ms-check,
+input[type="checkbox"]::-ms-check {
+    background-color: #ffffff;
+    color           : #000000;
+    border-color    : #000000;
+    border-style    : solid;
+}
+
+input[type="password"]::-ms-reveal {
+    background: #000000;
+    color     : #ffffff;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #80808075;
+}
+
+progress::-ms-fill {
+    background: -ms-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(45, 253, 72, 1) 100%);
+    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#2dfd48", GradientType=1);
+}
+
+input[type="range"]::-ms-fill-lower {
+    background: #808080;
+}
+
+input[type="range"]::-ms-fill-upper {
+    background: #f5f6f8;
+}
+
+input[type="range"]::-ms-thumb {
+    height       : 20px;
+    width        : 20px;
+    background   : #000000;
+    border-radius: 50%;
+}
+
+input[type="range"]::-ms-track {
+    color : transparent;
+    border: none;
+    height: 20px;
+}
+
+input[type="range"]::-ms-tooltip,
+input[type="range"]::-ms-ticks-before,
+input[type="range"]::-ms-ticks-after {
+    display: none;
 }
