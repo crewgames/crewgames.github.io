@@ -14,10 +14,11 @@
         "entertainment",
         "games"
     ],
-    "scope": "https://crewgames.github.io/",
+    "scope": "https://crewcommunity.ml/",
     "display": "standalone",
     "background_color": "#37a697",
     "theme_color": "#8ffff0",
     "orientation": "portrait",
     "prefer_related_applications": false
 }
+

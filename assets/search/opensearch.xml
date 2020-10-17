@@ -11,3 +11,4 @@
 	</InputEncoding>
 	<Url type="text/html" method="get" template="/?q={searchTerms}" />
 </OpenSearchDescription>
+
