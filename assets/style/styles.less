@@ -54,6 +54,10 @@
     }
 }
 
+::-webkit-scrollbar:window-inactive {
+    filter: grayscale(100%);
+}
+
 @media print {
 
     html,
@@ -65,8 +69,10 @@
     *,
     *::before,
     *::after {
-        box-shadow : none !important;
-        text-shadow: none !important;
+        box-shadow                : none !important;
+        text-shadow               : none !important;
+        color-adjust              : exact;
+        -webkit-print-color-adjust: exact;
     }
 
     .header,
@@ -98,8 +104,10 @@
     margin-left  : 20mm;
 }
 
-::-webkit-scrollbar:window-inactive {
-    filter: grayscale(100%);
+a {
+    -webkit-text-decoration-skip: skip;
+    text-decoration-skip: edges leading-spaces trailing-spaces box-decoration;
+    text-decoration-skip-ink: auto;
 }
 
 .navbar-brand {
