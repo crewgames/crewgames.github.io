@@ -22,9 +22,9 @@ img {
 
 * {
     -ms-zoom-animation            : default !important;
-    -ms-zoom                      : 1 !important;
+    -ms-zoom                      : 1 !important; /* hasLayout hack */
     zoom                          : 1 !important;
-    scrollbar-base-color          : #ffffff;
+    scrollbar-base-color          : #ffffff; /* scrollbar */
     scrollbar-track-color         : #ffffff;
     scrollbar-face-color          : #ffffff;
     scrollbar-arrow-color         : #000000;
@@ -39,7 +39,7 @@ img {
     -ms-scrollbar-highlight-color : #00000080;
     -ms-scrollbar-shadow-color    : #00000080;
     -ms-scrollbar-darkshadow-color: #000000;
-    -ms-behavior                  : url('PIE.htc');
+    -ms-behavior                  : url('PIE.htc'); /* CSS3 polyfill */
     behavior                      : url('PIE.htc');
 }
 
